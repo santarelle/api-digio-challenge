@@ -5,6 +5,7 @@ import com.digio.challenge.adapter.out.feign.dto.Customer;
 import com.digio.challenge.adapter.out.feign.dto.Product;
 import com.digio.challenge.application.domain.Purchase;
 import com.digio.challenge.application.exception.BusinessLogicException;
+import com.digio.challenge.application.exception.CustomerNotFoundException;
 import com.digio.challenge.application.exception.ProductNotFoundException;
 import com.digio.challenge.infrastructure.mapper.ProductMapper;
 import com.digio.challenge.infrastructure.mapper.PurchaseMapper;
@@ -49,4 +50,9 @@ public abstract class AbstractEcommerceService {
         return PurchaseMapper.from(customer, ProductMapper.from(product), purchase.getQuantity(), totalValue);
     }
 
+    protected Customer getCustomerByCpf(List<Customer> customers, String customerCpf) {
+        return customers.stream().filter(customerDto -> customerCpf.equals(customerDto.getCpf()))
+                .findFirst()
+                .orElseThrow(() -> new CustomerNotFoundException("Customer not found by cpf: %s".formatted(customerCpf)));
+    }
 }

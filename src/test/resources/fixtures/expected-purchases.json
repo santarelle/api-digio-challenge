@@ -1,0 +1,557 @@
+[
+  {
+    "customer": {
+      "name": "Hadassa Daniela Sales",
+      "cpf": "1051252612"
+    },
+    "product": {
+      "code": 12,
+      "wineType": "Branco",
+      "price": 106.5,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 2,
+    "totalValue": 213.0
+  },
+  {
+    "customer": {
+      "name": "Fabiana Melissa Nunes",
+      "cpf": "824643755772"
+    },
+    "product": {
+      "code": 18,
+      "wineType": "Rosé",
+      "price": 120.99,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 2,
+    "totalValue": 241.98
+  },
+  {
+    "customer": {
+      "name": "Andreia Emanuelly da Mata",
+      "cpf": "27737287426"
+    },
+    "product": {
+      "code": 3,
+      "wineType": "Rosé",
+      "price": 121.75,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 2,
+    "totalValue": 243.50
+  },
+  {
+    "customer": {
+      "name": "Geraldo Pedro Julio Nascimento",
+      "cpf": "05870189179"
+    },
+    "product": {
+      "code": 10,
+      "wineType": "Chardonnay",
+      "price": 130.75,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 2,
+    "totalValue": 261.50
+  },
+  {
+    "customer": {
+      "name": "Teresinha Daniela Galvão",
+      "cpf": "04372012950"
+    },
+    "product": {
+      "code": 4,
+      "wineType": "Espumante",
+      "price": 134.25,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 2,
+    "totalValue": 268.50
+  },
+  {
+    "customer": {
+      "name": "Kaique Danilo Alves",
+      "cpf": "20634031392"
+    },
+    "product": {
+      "code": 8,
+      "wineType": "Rosé",
+      "price": 120.99,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 3,
+    "totalValue": 362.97
+  },
+  {
+    "customer": {
+      "name": "Pietra Antônia Brenda Silva",
+      "cpf": "74302668512"
+    },
+    "product": {
+      "code": 3,
+      "wineType": "Rosé",
+      "price": 121.75,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 3,
+    "totalValue": 365.25
+  },
+  {
+    "customer": {
+      "name": "Andreia Emanuelly da Mata",
+      "cpf": "27737287426"
+    },
+    "product": {
+      "code": 17,
+      "wineType": "Branco",
+      "price": 125.25,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 3,
+    "totalValue": 375.75
+  },
+  {
+    "customer": {
+      "name": "Hadassa Daniela Sales",
+      "cpf": "1051252612"
+    },
+    "product": {
+      "code": 17,
+      "wineType": "Branco",
+      "price": 125.25,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 3,
+    "totalValue": 375.75
+  },
+  {
+    "customer": {
+      "name": "Geraldo Pedro Julio Nascimento",
+      "cpf": "05870189179"
+    },
+    "product": {
+      "code": 5,
+      "wineType": "Chardonnay",
+      "price": 128.99,
+      "vintage": "2021",
+      "purchaseYear": 2022
+    },
+    "quantity": 3,
+    "totalValue": 386.97
+  },
+  {
+    "customer": {
+      "name": "Teresinha Daniela Galvão",
+      "cpf": "04372012950"
+    },
+    "product": {
+      "code": 20,
+      "wineType": "Chardonnay",
+      "price": 130.75,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 3,
+    "totalValue": 392.25
+  },
+  {
+    "customer": {
+      "name": "Teresinha Daniela Galvão",
+      "cpf": "04372012950"
+    },
+    "product": {
+      "code": 14,
+      "wineType": "Espumante",
+      "price": 134.25,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 3,
+    "totalValue": 402.75
+  },
+  {
+    "customer": {
+      "name": "Hadassa Daniela Sales",
+      "cpf": "1051252612"
+    },
+    "product": {
+      "code": 19,
+      "wineType": "Espumante",
+      "price": 135.5,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 3,
+    "totalValue": 406.5
+  },
+  {
+    "customer": {
+      "name": "Catarina Sebastiana Analu Almeida",
+      "cpf": "88901767767"
+    },
+    "product": {
+      "code": 2,
+      "wineType": "Branco",
+      "price": 126.5,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 4,
+    "totalValue": 506.0
+  },
+  {
+    "customer": {
+      "name": "Andreia Emanuelly da Mata",
+      "cpf": "27737287426"
+    },
+    "product": {
+      "code": 4,
+      "wineType": "Espumante",
+      "price": 134.25,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 4,
+    "totalValue": 537.00
+  },
+  {
+    "customer": {
+      "name": "Natália Sandra da Cruz",
+      "cpf": "03763001590"
+    },
+    "product": {
+      "code": 4,
+      "wineType": "Espumante",
+      "price": 134.25,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 4,
+    "totalValue": 537.00
+  },
+  {
+    "customer": {
+      "name": "Ian Joaquim Giovanni Santos",
+      "cpf": "96718391344"
+    },
+    "product": {
+      "code": 14,
+      "wineType": "Espumante",
+      "price": 134.25,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 4,
+    "totalValue": 537.00
+  },
+  {
+    "customer": {
+      "name": "Gabriel Rafael Dias",
+      "cpf": "85067950013"
+    },
+    "product": {
+      "code": 19,
+      "wineType": "Espumante",
+      "price": 135.5,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 4,
+    "totalValue": 542.0
+  },
+  {
+    "customer": {
+      "name": "Andreia Emanuelly da Mata",
+      "cpf": "27737287426"
+    },
+    "product": {
+      "code": 13,
+      "wineType": "Rosé",
+      "price": 121.75,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 5,
+    "totalValue": 608.75
+  },
+  {
+    "customer": {
+      "name": "Geraldo Pedro Julio Nascimento",
+      "cpf": "05870189179"
+    },
+    "product": {
+      "code": 2,
+      "wineType": "Branco",
+      "price": 126.5,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 5,
+    "totalValue": 632.5
+  },
+  {
+    "customer": {
+      "name": "Andreia Emanuelly da Mata",
+      "cpf": "27737287426"
+    },
+    "product": {
+      "code": 14,
+      "wineType": "Espumante",
+      "price": 134.25,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 5,
+    "totalValue": 671.25
+  },
+  {
+    "customer": {
+      "name": "Isis Isis Ramos",
+      "cpf": "29457224965"
+    },
+    "product": {
+      "code": 18,
+      "wineType": "Rosé",
+      "price": 120.99,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 6,
+    "totalValue": 725.94
+  },
+  {
+    "customer": {
+      "name": "Gabriel Rafael Dias",
+      "cpf": "85067950013"
+    },
+    "product": {
+      "code": 17,
+      "wineType": "Branco",
+      "price": 125.25,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 6,
+    "totalValue": 751.50
+  },
+  {
+    "customer": {
+      "name": "Geraldo Pedro Julio Nascimento",
+      "cpf": "05870189179"
+    },
+    "product": {
+      "code": 15,
+      "wineType": "Chardonnay",
+      "price": 188.99,
+      "vintage": "2021",
+      "purchaseYear": 2022
+    },
+    "quantity": 4,
+    "totalValue": 755.96
+  },
+  {
+    "customer": {
+      "name": "Maitê Kamilly Corte Real",
+      "cpf": "022484638124"
+    },
+    "product": {
+      "code": 15,
+      "wineType": "Chardonnay",
+      "price": 188.99,
+      "vintage": "2021",
+      "purchaseYear": 2022
+    },
+    "quantity": 4,
+    "totalValue": 755.96
+  },
+  {
+    "customer": {
+      "name": "Catarina Sebastiana Analu Almeida",
+      "cpf": "88901767767"
+    },
+    "product": {
+      "code": 16,
+      "wineType": "Tinto",
+      "price": 127.5,
+      "vintage": "2016",
+      "purchaseYear": 2017
+    },
+    "quantity": 6,
+    "totalValue": 765.0
+  },
+  {
+    "customer": {
+      "name": "Andreia Emanuelly da Mata",
+      "cpf": "27737287426"
+    },
+    "product": {
+      "code": 5,
+      "wineType": "Chardonnay",
+      "price": 128.99,
+      "vintage": "2021",
+      "purchaseYear": 2022
+    },
+    "quantity": 6,
+    "totalValue": 773.94
+  },
+  {
+    "customer": {
+      "name": "Maitê Kamilly Corte Real",
+      "cpf": "022484638124"
+    },
+    "product": {
+      "code": 19,
+      "wineType": "Espumante",
+      "price": 135.5,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 6,
+    "totalValue": 813.0
+  },
+  {
+    "customer": {
+      "name": "Isis Isis Ramos",
+      "cpf": "29457224965"
+    },
+    "product": {
+      "code": 1,
+      "wineType": "Tinto",
+      "price": 229.99,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 4,
+    "totalValue": 919.96
+  },
+  {
+    "customer": {
+      "name": "Ian Joaquim Giovanni Santos",
+      "cpf": "96718391344"
+    },
+    "product": {
+      "code": 15,
+      "wineType": "Chardonnay",
+      "price": 188.99,
+      "vintage": "2021",
+      "purchaseYear": 2022
+    },
+    "quantity": 6,
+    "totalValue": 1133.94
+  },
+  {
+    "customer": {
+      "name": "Fabiana Melissa Nunes",
+      "cpf": "824643755772"
+    },
+    "product": {
+      "code": 10,
+      "wineType": "Chardonnay",
+      "price": 130.75,
+      "vintage": "2020",
+      "purchaseYear": 2021
+    },
+    "quantity": 10,
+    "totalValue": 1307.50
+  },
+  {
+    "customer": {
+      "name": "Geraldo Pedro Julio Nascimento",
+      "cpf": "05870189179"
+    },
+    "product": {
+      "code": 1,
+      "wineType": "Tinto",
+      "price": 229.99,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 6,
+    "totalValue": 1379.94
+  },
+  {
+    "customer": {
+      "name": "Ian Joaquim Giovanni Santos",
+      "cpf": "96718391344"
+    },
+    "product": {
+      "code": 17,
+      "wineType": "Branco",
+      "price": 125.25,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 13,
+    "totalValue": 1628.25
+  },
+  {
+    "customer": {
+      "name": "Vitória Alícia Mendes",
+      "cpf": "20623850567"
+    },
+    "product": {
+      "code": 1,
+      "wineType": "Tinto",
+      "price": 229.99,
+      "vintage": "2017",
+      "purchaseYear": 2018
+    },
+    "quantity": 8,
+    "totalValue": 1839.92
+  },
+  {
+    "customer": {
+      "name": "Ian Joaquim Giovanni Santos",
+      "cpf": "96718391344"
+    },
+    "product": {
+      "code": 2,
+      "wineType": "Branco",
+      "price": 126.5,
+      "vintage": "2018",
+      "purchaseYear": 2019
+    },
+    "quantity": 15,
+    "totalValue": 1897.5
+  },
+  {
+    "customer": {
+      "name": "Natália Sandra da Cruz",
+      "cpf": "03763001590"
+    },
+    "product": {
+      "code": 6,
+      "wineType": "Tinto",
+      "price": 327.5,
+      "vintage": "2016",
+      "purchaseYear": 2017
+    },
+    "quantity": 6,
+    "totalValue": 1965.0
+  },
+  {
+    "customer": {
+      "name": "Ian Joaquim Giovanni Santos",
+      "cpf": "96718391344"
+    },
+    "product": {
+      "code": 3,
+      "wineType": "Rosé",
+      "price": 121.75,
+      "vintage": "2019",
+      "purchaseYear": 2020
+    },
+    "quantity": 20,
+    "totalValue": 2435.00
+  }
+]

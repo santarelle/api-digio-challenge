@@ -1,0 +1,7 @@
+logging:
+  level:
+    com.digio.challenge: INFO
+
+clients:
+  ecommerce:
+    url: ${CLIENTS_ECOMMERCE_URL}

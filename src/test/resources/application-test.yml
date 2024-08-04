@@ -1,0 +1,7 @@
+feign:
+  client:
+    enabled: false
+
+clients:
+  ecommerce:
+    url: https://

@@ -2,6 +2,7 @@ package com.digio.challenge.infrastructure.exceptionhandler;
 
 import com.digio.challenge.application.exception.BusinessLogicException;
 import com.digio.challenge.application.exception.ProductNotFoundException;
+import com.digio.challenge.application.exception.PurchaseNotFoundException;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -28,7 +29,6 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return handleExceptionInternal(ex, errorResponse, new HttpHeaders(), httpStatusCode, webRequest);
     }
 
-
     @ExceptionHandler(ProductNotFoundException.class)
     public ResponseEntity<Object> handleProductNotFoundException(ProductNotFoundException ex, WebRequest webRequest) {
         HttpStatusCode httpStatusCode = HttpStatusCode.valueOf(HttpStatus.NOT_FOUND.value());
@@ -40,5 +40,18 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("Handler error product not found exception {}", errorResponse);
         return handleExceptionInternal(ex, errorResponse, new HttpHeaders(), httpStatusCode, webRequest);
     }
+
+    @ExceptionHandler(PurchaseNotFoundException.class)
+    public ResponseEntity<Object> handlePurchaseNotFoundException(PurchaseNotFoundException ex, WebRequest webRequest) {
+        HttpStatusCode httpStatusCode = HttpStatusCode.valueOf(HttpStatus.NOT_FOUND.value());
+        ErrorResponse errorResponse = ErrorResponse.builder()
+                .title(httpStatusCode.toString())
+                .status(httpStatusCode.value())
+                .detail(ex.getMessage())
+                .build();
+        log.error("Handler error purchase not found exception {}", errorResponse);
+        return handleExceptionInternal(ex, errorResponse, new HttpHeaders(), httpStatusCode, webRequest);
+    }
+
 
 }

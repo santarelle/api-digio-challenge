@@ -5,3 +5,7 @@ logging:
 spring:
   application:
     name: api-digio-challange
+
+clients:
+  ecommerce:
+    url: https://rgr3viiqdl8sikgv.public.blob.vercel-storage.com

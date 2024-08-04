@@ -1,8 +1,6 @@
 package com.digio.challenge.infrastructure.exceptionhandler;
 
-import com.digio.challenge.application.exception.BusinessLogicException;
-import com.digio.challenge.application.exception.ProductNotFoundException;
-import com.digio.challenge.application.exception.PurchaseNotFoundException;
+import com.digio.challenge.application.exception.*;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -53,5 +51,27 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         return handleExceptionInternal(ex, errorResponse, new HttpHeaders(), httpStatusCode, webRequest);
     }
 
+    @ExceptionHandler(CustomerNotFoundException.class)
+    public ResponseEntity<Object> handleCustomerNotFoundException(CustomerNotFoundException ex, WebRequest webRequest) {
+        HttpStatusCode httpStatusCode = HttpStatusCode.valueOf(HttpStatus.NOT_FOUND.value());
+        ErrorResponse errorResponse = ErrorResponse.builder()
+                .title(httpStatusCode.toString())
+                .status(httpStatusCode.value())
+                .detail(ex.getMessage())
+                .build();
+        log.error("Handler error customer not found exception {}", errorResponse);
+        return handleExceptionInternal(ex, errorResponse, new HttpHeaders(), httpStatusCode, webRequest);
+    }
 
+    @ExceptionHandler(RecommendedWineNotFoundException.class)
+    public ResponseEntity<Object> handleRecommendedWineNotFoundException(RecommendedWineNotFoundException ex, WebRequest webRequest) {
+        HttpStatusCode httpStatusCode = HttpStatusCode.valueOf(HttpStatus.NOT_FOUND.value());
+        ErrorResponse errorResponse = ErrorResponse.builder()
+                .title(httpStatusCode.toString())
+                .status(httpStatusCode.value())
+                .detail(ex.getMessage())
+                .build();
+        log.error("Handler error recommended wine not found exception {}", errorResponse);
+        return handleExceptionInternal(ex, errorResponse, new HttpHeaders(), httpStatusCode, webRequest);
+    }
 }

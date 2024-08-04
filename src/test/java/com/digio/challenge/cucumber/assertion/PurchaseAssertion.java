@@ -39,4 +39,10 @@ public class PurchaseAssertion {
         assertEquals(expected.getQuantity(), actual.quantity());
         assertEquals(expected.getTotalValue(), actual.totalValue());
     }
+
+    public void assertPurchase(PurchaseAssertionDataTable expectedPurchase, ResultActions resultActions) {
+        Purchase actualPurchase = ObjectMapperUtils.map(new TypeReference<>() {
+        }, resultActions);
+        makeAssertion(expectedPurchase, actualPurchase);
+    }
 }

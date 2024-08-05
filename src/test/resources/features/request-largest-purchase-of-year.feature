@@ -4,7 +4,7 @@ Feature: Request the largest purchase of the year
   I want to retrieve the largest purchase of the year
   So that I can obtain the details of the largest purchase, including the customer's name, CPF, product details, quantity, and total value.
 
-  Scenario: Retrieve the largest purchase of the year - success
+  Background:
     Given the system contains clients with the following data
       | Name                              | Cpf          |
       | Geraldo Pedro Julio Nascimento    | 05870189179  |
@@ -108,7 +108,45 @@ Feature: Request the largest purchase of the year
       | 18   | Rosé       | 120.99 | 2018    | 2019          |
       | 19   | Espumante  | 135.50 | 2019    | 2020          |
       | 20   | Chardonnay | 130.75 | 2020    | 2021          |
+
+  Scenario: Retrieve the largest purchase of the year 2017 - success
+    When I request the largest purchase of the year "2017"
+    Then should return the purchase with following data
+      | Customer Name          | Customer Cpf | Product Code | Product Wine Type | Product Price | Product Vintage | Product Purchase Year | Quantity | Total Value |
+      | Natália Sandra da Cruz | 03763001590  | 6            | Tinto             | 327.50        | 2016            | 2017                  | 6        | 1965.00     |
+
+  Scenario: Retrieve the largest purchase of the year 2018 - success
+    When I request the largest purchase of the year "2018"
+    Then should return the purchase with following data
+      | Customer Name         | Customer Cpf | Product Code | Product Wine Type | Product Price | Product Vintage | Product Purchase Year | Quantity | Total Value |
+      | Vitória Alícia Mendes | 20623850567  | 1            | Tinto             | 229.99        | 2017            | 2018                  | 8        | 1839.92     |
+
+  Scenario: Retrieve the largest purchase of the year 2019 - success
     When I request the largest purchase of the year "2019"
     Then should return the purchase with following data
       | Customer Name               | Customer Cpf | Product Code | Product Wine Type | Product Price | Product Vintage | Product Purchase Year | Quantity | Total Value |
       | Ian Joaquim Giovanni Santos | 96718391344  | 2            | Branco            | 126.50        | 2018            | 2019                  | 15       | 1897.50     |
+
+  Scenario: Retrieve the largest purchase of the year 2020 - success
+    When I request the largest purchase of the year "2020"
+    Then should return the purchase with following data
+      | Customer Name               | Customer Cpf | Product Code | Product Wine Type | Product Price | Product Vintage | Product Purchase Year | Quantity | Total Value |
+      | Ian Joaquim Giovanni Santos | 96718391344  | 3            | Rosé              | 121.75        | 2019            | 2020                  | 20       | 2435.00     |
+
+  Scenario: Retrieve the largest purchase of the year 2021 - success
+    When I request the largest purchase of the year "2021"
+    Then should return the purchase with following data
+      | Customer Name         | Customer Cpf | Product Code | Product Wine Type | Product Price | Product Vintage | Product Purchase Year | Quantity | Total Value |
+      | Fabiana Melissa Nunes | 824643755772 | 10           | Chardonnay        | 130.75        | 2020            | 2021                  | 10       | 1307.50     |
+
+  Scenario: Retrieve the largest purchase of the year 2022 - success
+    When I request the largest purchase of the year "2022"
+    Then should return the purchase with following data
+      | Customer Name               | Customer Cpf | Product Code | Product Wine Type | Product Price | Product Vintage | Product Purchase Year | Quantity | Total Value |
+      | Ian Joaquim Giovanni Santos | 96718391344  | 15           | Chardonnay        | 188.99        | 2021            | 2022                  | 6        | 1133.94     |
+
+  Scenario: Retrieve the largest purchase of the year 2023 - fail
+    When I request the largest purchase of the year "2023"
+    Then should return the following error data
+      | Title         | Status | Detail                             |
+      | 404 NOT_FOUND | 404    | There is no purchase for year 2023 |

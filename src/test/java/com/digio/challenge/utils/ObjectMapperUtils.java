@@ -3,6 +3,7 @@ package com.digio.challenge.utils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.test.web.servlet.ResultActions;
 
@@ -13,6 +14,10 @@ import java.nio.charset.StandardCharsets;
 public final class ObjectMapperUtils {
 
     private static final ObjectMapper objectMapper = new ObjectMapper();
+
+    static {
+        objectMapper.registerModule(new JavaTimeModule());
+    }
 
     public static <T> T map(TypeReference<T> reference, ResultActions resultActions) {
         try {

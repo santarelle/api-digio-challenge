@@ -18,7 +18,6 @@ import java.util.List;
 import static org.mockito.Mockito.when;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 public class LargestPurchaseStepDefs extends StepDefs {
 
@@ -42,13 +41,12 @@ public class LargestPurchaseStepDefs extends StepDefs {
 
         String url = URL_BASE.formatted(year);
         ResultActions resultActions = mockMvc.perform(get(url)
-                        .accept(APPLICATION_JSON_VALUE))
-                .andExpect(status().isOk());
+                .accept(APPLICATION_JSON_VALUE));
         transactionDataTable.setResultActions(resultActions);
     }
 
     @Then("should return the purchase with following data")
-    public void shouldReturnThePurchaseWithFollowingData(List<PurchaseAssertionDataTable> expectedPurchaseDataTableList) {
-        purchaseAssertion.assertPurchase(expectedPurchaseDataTableList.get(0), transactionDataTable.getResultActions());
+    public void shouldReturnThePurchaseWithFollowingData(List<PurchaseAssertionDataTable> expectedPurchaseDataTableList) throws Exception {
+        purchaseAssertion.assertPurchase(expectedPurchaseDataTableList.get(0), transactionDataTable.getResultActions(), 200);
     }
 }

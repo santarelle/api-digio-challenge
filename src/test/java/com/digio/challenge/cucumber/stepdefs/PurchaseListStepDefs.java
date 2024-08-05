@@ -46,7 +46,7 @@ public class PurchaseListStepDefs extends StepDefs {
     }
 
     @Then("should receive the list of purchases sorted in ascending order by value")
-    public void shouldReceiveTheListOfPurchasesSortedInAscendingOrderByValue(List<PurchaseAssertionDataTable> expectedPurchaseDataTableList) {
-        purchaseAssertion.assertPurchaseList(expectedPurchaseDataTableList, transactionDataTable.getResultActions());
+    public void shouldReceiveTheListOfPurchasesSortedInAscendingOrderByValue(List<PurchaseAssertionDataTable> expectedPurchaseDataTableList) throws Exception {
+        purchaseAssertion.assertPurchaseList(expectedPurchaseDataTableList, transactionDataTable.getResultActions(), 200);
     }
 }
